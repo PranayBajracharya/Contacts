@@ -3,6 +3,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="icon" href="../img/logoContacts.png"> -->
     <title>Google Contacts</title>
 </head>
 <body>
@@ -13,7 +14,7 @@
                     <img src="../img/hamburger.png" alt="Menu">
                 </div>
                 <div>
-                    <a href="" class="home">
+                    <a href="./index.php" class="home">
                         <img src="../img/logoContacts.png" alt="Logo">
                         <span>Contacts</span>
                     </a>
@@ -42,14 +43,14 @@
 
     <aside>
         <div class="create ">
-            <a href="../create.php" class="create-button">
+            <a href="./create.php" class="create-button">
                 <img src="../img/plus.png" alt="create contacts">
                 <span>Create Contact</span> 
             </a>    
         </div>
         <div class="navbar">
             <div>
-                <a href="" class="links active">
+                <a href="./index.php" class="links active">
                     <img src="../img/user.png" alt="Contacts">
                     <span>
                         <span>Contacts</span>
@@ -58,7 +59,7 @@
                 </a>
             </div>
             <div>
-                <a href="" class="links">
+                <a href="./favourite.php" class="links">
                     <img src="../img/star.png" alt="Favourites">
                     <span>Favourites</span>
                     <span class="number">20</span>
@@ -83,7 +84,7 @@
         </div>
         <div class="navbar">
             <div>
-                <a href="" class="links">
+                <a href="./trash.php" class="links">
                     <img src="../img/dustbin.png" alt="Trash">
                     <span>Trash</span>
                 </a>
