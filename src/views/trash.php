@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <link rel="stylesheet" href="../css/trash.css">
+    <link rel="stylesheet" href="../../public/css/trash.css">
     <?php include('./header.php'); ?>
     <main>
         <div class="table">
@@ -13,7 +13,7 @@
                 <div class="row">
                     <div class="name">
                         <div class="profile circle">
-                            <img src="../img/toothless.png" alt="profile picture" class="circle">
+                            <img src="../../public/img/toothless.png" alt="profile picture" class="circle">
                         </div>
                         <div class="full-name">
                             <span>Pranay Bajracharya</span> 

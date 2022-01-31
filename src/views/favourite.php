@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../../public/css/index.css">
     <?php include('./header.php'); ?>
     <main>
         <div class="table">
@@ -14,7 +14,7 @@
                 <div class="row">
                     <div class="name">
                         <div class="profile circle">
-                            <img src="../img/toothless.png" alt="profile picture" class="circle">
+                            <img src="../../public/img/toothless.png" alt="profile picture" class="circle">
                         </div>
                         <div class="full-name">
                             <span>Pranay Bajracharya</span> 
@@ -24,13 +24,13 @@
                     <div class="phone">9861964711</div>
                     <div class="buttons">
                         <button class="button">
-                            <img src="../img/star.png" alt="">
+                            <img src="../../public/img/star.png" alt="">
                         </button>
                         <button class="button">
-                            <img src="../img/pencil.png" alt="">
+                            <img src="../../public/img/pencil.png" alt="">
                         </button>
                         <button class="button">
-                            <img src="../img/dustbin.png" alt="">
+                            <img src="../../public/img/dustbin.png" alt="">
                         </button>
                     </div>   
                 </div>            
