@@ -1,8 +1,16 @@
+<?php 
+    include('../includes/class-autoloader.inc.php');
+?> 
+
 <!DOCTYPE html>
 <html lang="en">
     <link rel="stylesheet" href="../../public/css/index.css">
     <?php include('./header.php'); ?>
     <main>
+        <?php 
+            $testObject = new index();
+            $testObject->getContacts();
+        ?> 
         <div class="table">
             <div class="thead">
                 <div class="name">Name</div>

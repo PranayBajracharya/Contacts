@@ -1,6 +1,6 @@
 <?php
 
-class Db {
+class db {
     private $host = 'localhost';
     private $user = 'root';
     private $password = '';
