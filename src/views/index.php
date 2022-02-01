@@ -8,7 +8,7 @@
     <?php include('./header.php'); ?>
     <main>
         <?php 
-            $testObject = new index();
+            $testObject = new Index();
             $testObject->getContacts();
         ?> 
         <div class="table">
