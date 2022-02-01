@@ -8,8 +8,11 @@
     <?php include('./header.php'); ?>
     <main>
         <?php 
-            $testObject = new Index();
-            $testObject->getContacts();
+            $testObject2 = new IndexController();
+            $results = $testObject2->index();
+            foreach ($results as $data) {
+                echo $data['id'] . ' ' . $data['first_name'] . ' ' . $data['last_name'] . ' ' . $data['nick_name'] . ' ' . $data['email'] . '<br>';
+            }
         ?> 
         <div class="table">
             <div class="thead">
