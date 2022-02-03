@@ -18,8 +18,9 @@
             </div>
             <div class="tbody">
             <?php 
+                $user_id = 1;
                 $testObject2 = new IndexController();
-                $results = $testObject2->index();
+                $results = $testObject2->index($user_id);
                 foreach ($results as $data) {
             ?>
                     <div class="row">
