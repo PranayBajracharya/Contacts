@@ -19,8 +19,8 @@
             <div class="tbody">
             <?php 
                 $user_id = 1;
-                $testObject2 = new IndexController();
-                $results = $testObject2->index($user_id);
+                $testObject = new IndexController();
+                $results = $testObject->index($user_id);
                 foreach ($results as $data) {
             ?>
                     <div class="row">
@@ -29,14 +29,24 @@
                                 <img src="../../public/img/toothless.png" alt="profile picture" class="circle">
                             </div>
                             <div class="full-name">
-                                <span><?php echo $data['first_name'] . ' ' . $data['last_name'] ?></span> 
+                                <span>
+                                    <?php echo $data['first_name'] . ' ' . $data['last_name'] ?>
+                                </span> 
                             </div>
                         </div>
-                        <div class="email"><?php echo $data['email'] ?></div>
-                        <div class="phone"><?php echo $data['phone'] ?></div>
+                        <div class="email">
+                            <?php echo $data['email'] ?>
+                        </div>
+                        <div class="phone">
+                            <?php echo $data['phone'] ?>
+                        </div>
                         <div class="buttons">
                             <button class="button">
-                                <img src="../../public/img/star.png" alt="">
+                                <?php if ($data['favourite'] == 1) { ?>
+                                    <img src="../../public/img/star-active.png" alt="">
+                                <?php } else { ?>
+                                        <img src="../../public/img/star.png" alt="">
+                                <?php } ?>
                             </button>
                             <button class="button">
                                 <img src="../../public/img/pencil.png" alt="">

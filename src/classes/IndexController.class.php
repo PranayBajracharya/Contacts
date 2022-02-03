@@ -5,4 +5,9 @@ class IndexController extends Index {
         $results = $this->getContacts($user_id);
         return $results;
     }
+
+    public function favourite($user_id) {
+        $results = $this->getFavouriteContacts($user_id);
+        return $results;
+    }
 }
