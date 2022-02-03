@@ -10,4 +10,9 @@ class IndexController extends Index {
         $results = $this->getFavouriteContacts($user_id);
         return $results;
     }
+
+    public function deleted($user_id) {
+        $results = $this->getDeletedContacts($user_id);
+        return $results;
+    }
 }

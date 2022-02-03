@@ -6,6 +6,7 @@ class Db {
     private $password = '';
     private $dbname = 'contacts';
 
+    
     protected function connect() {
         $dsn = 'mysql:host=' . $this->host . ';dbname=' . $this->dbname;
         $db = new PDO($dsn, $this->user, $this->password);

@@ -1,3 +1,7 @@
+<?php 
+    include('../includes/class-autoloader.inc.php');
+?> 
+
 <!DOCTYPE html>
 <html lang="en">
     <link rel="stylesheet" href="../../public/css/trash.css">
@@ -9,25 +13,37 @@
                 <div class="deleted">Delete on</div>
                 <div class="recover"></div>
             </div>
-            <div class="tbody">                
+            <div class="tbody">   
+            <?php 
+                $user_id = 1;
+                $testObject = new IndexController();
+                $results = $testObject->deleted($user_id);
+                foreach ($results as $data) {
+            ?>             
                 <div class="row">
                     <div class="name">
                         <div class="profile circle">
                             <img src="../../public/img/toothless.png" alt="profile picture" class="circle">
                         </div>
                         <div class="full-name">
-                            <span>Pranay Bajracharya</span> 
+                            <span>
+                                <?php echo $data['first_name'] . ' ' . $data['last_name'] ?>
+                            </span> 
                         </div>
                     </div>
-                    <div class="deleted">hijo rati</div>
+                    <div class="deleted">
+                        <?php echo $data['deleted_at'] ?>
+                    </div>
                     <div class="recover">
                         <form action="">
                             <button>Recover</button>
                         </form>
                     </div>   
                 </div>            
-               
             </div>
+            <?php
+                }                
+            ?> 
         </div>
     </main>
 </body>

@@ -18,4 +18,13 @@ class Index extends Db {
         $results = $stmt->fetchAll();
         return $results;
     }
+
+    public function getDeletedContacts($user_id) {
+        $sql = "SELECT * FROM contact WHERE user_id = $user_id AND deleted_at IS NOT NULL";
+        $stmt = $this->connect()->prepare($sql);
+        $stmt->execute();
+        
+        $results = $stmt->fetchAll();
+        return $results;
+    }
 }
