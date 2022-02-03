@@ -1,7 +1,3 @@
-<?php 
-    include('../includes/class-autoloader.inc.php');
-?> 
-
 <!DOCTYPE html>
 <html lang="en">
     <link rel="stylesheet" href="../../public/css/index.css">
@@ -36,7 +32,7 @@
                         <div class="phone"><?php echo $data['phone'] ?></div>
                         <div class="buttons">
                             <button class="button">
-                                <img src="../../public/img/star.png" alt="">
+                                <img src="../../public/img/star-active.png" alt="">
                             </button>
                             <button class="button">
                                 <img src="../../public/img/pencil.png" alt="">

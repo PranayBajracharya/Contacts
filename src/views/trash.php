@@ -1,7 +1,3 @@
-<?php 
-    include('../includes/class-autoloader.inc.php');
-?> 
-
 <!DOCTYPE html>
 <html lang="en">
     <link rel="stylesheet" href="../../public/css/trash.css">
