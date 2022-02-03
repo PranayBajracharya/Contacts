@@ -18,7 +18,7 @@
             ?>             
                 <div class="row">
                     <div class="name">
-                        <div class="profile circle">
+                        <div class="profile circle contacts">
                             <img src="../../public/img/toothless.png" alt="profile picture" class="circle">
                         </div>
                         <div class="full-name">

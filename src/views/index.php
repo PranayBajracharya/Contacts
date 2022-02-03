@@ -21,13 +21,13 @@
             ?>
                     <div class="row">
                         <div class="name">
-                            <div class="profile circle">
+                            <div class="profile circle contacts">
                                 <img src="../../public/img/toothless.png" alt="profile picture" class="circle">
                             </div>
                             <div class="full-name">
-                                <span>
+                                <!-- <span> -->
                                     <?php echo $data['first_name'] . ' ' . $data['last_name'] ?>
-                                </span> 
+                                <!-- </span>  -->
                             </div>
                         </div>
                         <div class="email">
@@ -39,16 +39,16 @@
                         <div class="buttons">
                             <button class="button">
                                 <?php if ($data['favourite'] == 1) { ?>
-                                    <img src="../../public/img/star-active.png" alt="">
+                                    <img class="favourite" src="../../public/img/star-active.png" alt="favourite">
                                 <?php } else { ?>
-                                        <img src="../../public/img/star.png" alt="">
+                                    <img class="favourite" src="../../public/img/star.png" alt="not favourite">
                                 <?php } ?>
                             </button>
                             <button class="button">
-                                <img src="../../public/img/pencil.png" alt="">
+                                <img class="edit" src="../../public/img/pencil.png" alt="edit">
                             </button>
                             <button class="button">
-                                <img src="../../public/img/dustbin.png" alt="">
+                                <img class="delete" src="../../public/img/dustbin.png" alt="delete">
                             </button>
                         </div>   
                     </div>
@@ -60,4 +60,5 @@
         
     </main>
 </body>
+<script src="../../public/js/index.js"></script>
 </html>

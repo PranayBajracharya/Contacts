@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=Poppins:wght@100;200;300;400;500;600&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Delius&family=Mochiy+Pop+P+One&display=swap'); */
+
 :root {
     --background: #fff;
     --background-dark: rgb(230, 230, 230);
@@ -64,6 +66,7 @@ header {
     padding: 1px;
 }
 .home span {
+    font-family: 'Delius', cursive;
     font-size: 24px;
     margin: 0 4px;
     padding-right: 10px;
@@ -128,7 +131,10 @@ header {
 .profile img {
     height: 42px;
     width: 42px;
-    margin: 8px 8px 8px 0;
+    margin: 8px 8px 8px 8px;
+}
+.contacts img {
+    margin: 8px 8px 8px 0px;
 }
 
 /* Effects */
