@@ -35,7 +35,9 @@
         </div>
 
         <div class="profile-side">
-            <div class="theme"></div>
+            <div class="theme button">
+                Theme
+            </div>
             <div class="apps hover-effect circle">
                 <img src="../../public/img/9dots.png" alt="Google Apps">
             </div>

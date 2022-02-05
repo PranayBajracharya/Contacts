@@ -4,7 +4,7 @@
 :root.light-theme {
     --background: #fff;
     --background-dark: rgb(230, 230, 230);
-    --hover-background-color: rgb(245, 245, 245);
+    --hover-background-color: rgb(240, 240, 240);
     --color: #222;
     --home-link: #222;
     --active-background-color: #e8f0fe;
@@ -12,12 +12,15 @@
     --line: #bbb;
     --img-filter: invert(19%) sepia(5%) saturate(16%) hue-rotate(316deg) brightness(88%) contrast(90%);
     --active-img-filter: invert(27%) sepia(81%) saturate(3945%) hue-rotate(209deg) brightness(91%) contrast(81%);
+    --create-hover-color: rgba(169, 204, 245, 0.1);
+    --create-button-box-shadow: 4px 4px 4px 0px rgb(60 64 67 / 30%),
+                                4px 4px 4px 2px rgb(60 64 67 / 15%);
 }
 
 :root.dark-theme {
     --background: #000;
-    --background-dark: rgb(25, 25, 25);
-    --hover-background-color: rgb(10, 10, 10);
+    --background-dark: rgb(44, 44, 44);
+    --hover-background-color: rgb(19, 19, 19);
     --color: #fff;
     --home-link: #fff;
     --active-background-color: #fff;
@@ -25,6 +28,9 @@
     --line: #444;
     --img-filter: invert(99%) sepia(5%) saturate(1%) hue-rotate(11deg) brightness(105%) contrast(100%);
     --active-img-filter: invert(27%) sepia(81%) saturate(3945%) hue-rotate(209deg) brightness(91%) contrast(81%);
+    --create-hover-color: hsla(212, 100%, 97%, 1);
+    --create-button-box-shadow: 4px 4px 4px 2px rgb(160 164 167 / 50%),
+                                4px 4px 4px 2px rgb(160 164 167 / 30%);
 }
 
 /* Global */
@@ -40,6 +46,7 @@ a {
 }
 body {
     background-color: var(--background);
+    color: var(--color);
 }
 button {
     cursor: pointer;
@@ -202,9 +209,8 @@ aside {
 }
 .create-button:hover {
     color: var(--active-color);
-    background-color: rgba(169, 204, 245, 0.1);
-    box-shadow: 4px 4px 4px 0px rgb(60 64 67 / 30%),
-                4px 4px 4px 2px rgb(60 64 67 / 15%);
+    background-color:var(--create-hover-color);
+    box-shadow: var(--create-button-box-shadow);
 }
 .create-button img {
     height: 24px;
