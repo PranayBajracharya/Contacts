@@ -1,7 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
-    <link rel="stylesheet" href="../../public/css/trash.css">
-    <?php include('./header.php'); ?>
+<?php include('./header.php'); ?>
+<link rel="stylesheet" href="../../public/css/trash.css">
     <main>
         <div class="table">
             <div class="thead">

@@ -5,13 +5,25 @@
     --background: #fff;
     --background-dark: rgb(230, 230, 230);
     --hover-background-color: rgb(245, 245, 245);
-    --color: #333;
-    --home-link: #333;
+    --color: #222;
+    --home-link: #222;
     --active-background-color: #e8f0fe;
     --active-color: #1967d2;
     --line: #bbb;
-    --create-button: #555;
     --img-filter: invert(19%) sepia(5%) saturate(16%) hue-rotate(316deg) brightness(88%) contrast(90%);
+    --active-img-filter: invert(27%) sepia(81%) saturate(3945%) hue-rotate(209deg) brightness(91%) contrast(81%);
+}
+
+:root.dark-theme {
+    --background: #000;
+    --background-dark: rgb(25, 25, 25);
+    --hover-background-color: rgb(10, 10, 10);
+    --color: #fff;
+    --home-link: #fff;
+    --active-background-color: #fff;
+    --active-color: #1967d2;
+    --line: #444;
+    --img-filter: invert(99%) sepia(5%) saturate(1%) hue-rotate(11deg) brightness(105%) contrast(100%);
     --active-img-filter: invert(27%) sepia(81%) saturate(3945%) hue-rotate(209deg) brightness(91%) contrast(81%);
 }
 
@@ -103,6 +115,7 @@ header {
     padding: 0 10px;
     border: none;
     background-color: inherit;
+    color: var(--color);
     font-size: 18px;
     width: 600px;
 }
@@ -173,8 +186,8 @@ aside {
     margin: 20px 8px;
 }
 .create-button {
-    background-color:var(--background);
-    color: var(--create-button);
+    background-color: #fff;
+    color: #444;
     display: flex;
     justify-content: center;
     align-items: center;
