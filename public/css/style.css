@@ -1,14 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Delius&family=Poppins:wght@100;200;300;400;500;600&display=swap');
 /* @import url('https://fonts.googleapis.com/css2?family=Delius&family=Mochiy+Pop+P+One&display=swap'); */
 
-:root {
+:root.light-theme {
     --background: #fff;
     --background-dark: rgb(230, 230, 230);
     --hover-background-color: rgb(245, 245, 245);
     --color: #333;
     --home-link: #333;
+    --active-background-color: #e8f0fe;
     --active-color: #1967d2;
     --line: #bbb;
+    --create-button: #555;
+    --img-filter: invert(19%) sepia(5%) saturate(16%) hue-rotate(316deg) brightness(88%) contrast(90%);
+    --active-img-filter: invert(27%) sepia(81%) saturate(3945%) hue-rotate(209deg) brightness(91%) contrast(81%);
 }
 
 /* Global */
@@ -86,7 +90,7 @@ header {
     background-color: inherit;
 }
 .search-button img {
-    filter: invert(28%) sepia(5%) saturate(7%) hue-rotate(344deg) brightness(92%) contrast(99%);
+    filter: var(--img-filter);
     padding: 10px;
 }
 .search-button {
@@ -170,7 +174,7 @@ aside {
 }
 .create-button {
     background-color:var(--background);
-    color: #555;
+    color: var(--create-button);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -216,15 +220,15 @@ aside {
 }
 .links img {
     margin-right: 20px;
-    filter: invert(40%) sepia(10%) saturate(258%) hue-rotate(173deg) brightness(91%) contrast(86%);
+    filter: var(--img-filter);
 }
 .active {
     color: var(--active-color);
-    background-color: #e8f0fe;
+    background-color: var(--active-background-color);
     border-radius: 0 25px 25px 0;
 }
 .active > img {
-    filter: invert(27%) sepia(81%) saturate(3945%) hue-rotate(209deg) brightness(91%) contrast(81%);
+    filter: var(--active-img-filter);
 }
 
 /* Main */

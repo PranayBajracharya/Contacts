@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="light-theme">
     <link rel="stylesheet" href="../../public/css/index.css">
     <?php include('./header.php'); ?>
     <main>   

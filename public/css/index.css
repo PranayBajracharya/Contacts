@@ -61,7 +61,7 @@
 .button img {
     background-color: inherit;
     width: 20px;
-    filter: invert(19%) sepia(5%) saturate(16%) hue-rotate(316deg) brightness(88%) contrast(92%);
+    filter: var(--img-filter);
 }
 
 
