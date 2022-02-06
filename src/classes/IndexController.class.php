@@ -15,4 +15,9 @@ class IndexController extends Index {
         $results = $this->getDeletedContacts($user_id);
         return $results;
     }
+
+    public function count($user_id) {
+        $results = $this->countContacts($user_id);
+        return $results;
+    }
 }

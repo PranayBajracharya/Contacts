@@ -2,7 +2,13 @@
 
 console.log("Themememe..");
 
-// const html = document.querySelector("html");
+const html = document.querySelector("html");
+const theme = localStorage.getItem("theme");
+if (theme == null) {
+    html.setAttribute("class", "light-theme light");
+} else {
+    html.setAttribute("class", theme);
+}
 const ham = document.querySelector(".hamburger-menu");
 const apps = document.querySelector(".apps");
 const logo = document.querySelector(".home");
@@ -22,7 +28,7 @@ if(html.classList.contains("panda-theme")) {
 }
 
 document.addEventListener("click", (event) => {
-    console.log(event.target);
+    // console.log(event.target);
     if (event.target.matches(".row")) {
         console.log("Its a row");
     }

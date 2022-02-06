@@ -9,17 +9,13 @@
     <link rel="stylesheet" href="../../public/css/style.css">
     <!-- <link rel="icon" href="../../public/img/logoContacts.png"> -->
     <title>Doodle Contacts</title>
-    <script>
-        const html = document.querySelector("html");
-        const theme = localStorage.getItem("theme");
-        if (theme == null) {
-            html.setAttribute("class", "light-theme light");
-        } else {
-            html.setAttribute("class", theme);
-        }
-    </script>
 </head>
 <body>
+    <?php 
+        $user_id = 1;
+        $count = new IndexController();
+        $results = $count->count($user_id);
+    ?>
     <header>
         <div class="header">
             <div class="head">
@@ -76,7 +72,7 @@
                     <img src="../../public/img/user.png" alt="Contacts">
                     <span>
                         <span>Contacts</span>
-                        <span class="number">200</span>
+                        <span class="number"><?php echo $results[0]['contacts'] ?></span>
                     </span>
                 </a>
             </div>
@@ -84,7 +80,7 @@
                 <a href="./favourite.php" class="links">
                     <img src="../../public/img/star.png" alt="Favourites">
                     <span>Favourites</span>
-                    <span class="number">20</span>
+                    <span class="number"><?php echo $results[0]['favourites'] ?></span>
                 </a>
             </div>         
         </div>

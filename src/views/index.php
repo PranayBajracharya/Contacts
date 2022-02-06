@@ -12,12 +12,12 @@
                 </div> -->
             </div>
             <div class="tbody">
-            <?php 
-                $user_id = 1;
-                $testObject = new IndexController();
-                $results = $testObject->index($user_id);
-                foreach ($results as $data) {
-            ?>
+                <?php 
+                    // $user_id = 1;
+                    $testObject = new IndexController();
+                    $results = $testObject->index($user_id);
+                    foreach ($results as $data) {
+                ?>
                     <div class="row">
                         <div class="name">
                             <div class="profile circle contacts">
@@ -51,10 +51,10 @@
                             </button>
                         </div>   
                     </div>
+                <?php
+                    }                
+                ?> 
             </div>
-            <?php
-                }                
-            ?> 
         </div>
         
     </main>
