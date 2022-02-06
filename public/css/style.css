@@ -15,6 +15,8 @@
     --create-hover-color: rgba(169, 204, 245, 0.1);
     --create-button-box-shadow: 4px 4px 4px 0px rgb(60 64 67 / 30%),
                                 4px 4px 4px 2px rgb(60 64 67 / 15%);
+    --theme-hover: #eee;
+    --theme-list-hover: #ddd;
 }
 :root.dark-theme {
     --background: #000;
@@ -30,6 +32,8 @@
     --create-hover-color: hsla(212, 100%, 97%, 1);
     --create-button-box-shadow: 4px 4px 4px 2px rgb(160 164 167 / 50%),
                                 4px 4px 4px 2px rgb(160 164 167 / 30%);
+    --theme-hover: #111;
+    --theme-list-hover: #222;
 }
 :root.spooky-theme {
     --background: #000;
@@ -45,6 +49,8 @@
     --create-hover-color: hsla(212, 100%, 97%, 1);
     --create-button-box-shadow: 4px 4px 4px 2px rgb(160 164 167 / 50%),
                                 4px 4px 4px 2px rgb(160 164 167 / 30%);
+    --theme-hover: #111;
+    --theme-list-hover: #222;
 }
 :root.panda-theme {
     --background: #fff;
@@ -60,6 +66,8 @@
     --create-hover-color: rgba(169, 204, 245, 0.1);
     --create-button-box-shadow: 4px 4px 4px 0px rgb(60 64 67 / 30%),
                                 4px 4px 4px 2px rgb(60 64 67 / 15%);
+    --theme-hover: #eee;
+    --theme-list-hover: #ddd;
 }
 :root.cute-theme {
     --background: #fff;
@@ -75,6 +83,8 @@
     --create-hover-color: rgba(169, 204, 245, 0.1);
     --create-button-box-shadow: 4px 4px 4px 0px rgb(60 64 67 / 30%),
                                 4px 4px 4px 2px rgb(60 64 67 / 15%);
+    --theme-hover: #eee;
+    --theme-list-hover: #ddd;
 }
 
 /* Global */
@@ -181,9 +191,10 @@ header {
 .theme {
     position: relative;
     padding: 10px 15px;
+    z-index: 2;
 }
 .theme:hover {
-    background-color: #eee;
+    background-color: var(--theme-hover);
     border-radius: 12px 12px 0 0;
 }
 .theme-list {
@@ -192,16 +203,18 @@ header {
     top: 45px;
     left: 0px;
     width: max-content ;
-    background-color: #eee;
+    background-color: var(--theme-hover);
     border-radius: 0 12px 12px 0;
+    z-index: 2;
 }
 .theme-list li {
     list-style: none;
     padding: 10px 15px;
     border-radius: 0 12px 12px 0;
+    z-index: 2;
 }
 .theme-list li:hover {
-    background-color: #ddd;
+    background-color: var(--theme-list-hover);
 }
 .theme:hover .theme-list {
     display: block;

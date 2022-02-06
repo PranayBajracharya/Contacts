@@ -58,6 +58,5 @@
         </div>
         
     </main>
-</body>
-<script src="../../public/js/index.js"></script>
+    <?php include('./footer.php'); ?>
 </html>
