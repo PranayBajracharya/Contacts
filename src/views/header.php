@@ -1,7 +1,7 @@
 <?php 
     include('../includes/class-autoloader.inc.php');
 ?> 
-<html lang="en" class="dark-theme dark">
+<html lang="en" class="spooky-theme dark">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">

@@ -11,6 +11,15 @@ if(html.classList.contains("dark")) {
     ham.children[0].setAttribute("src", "../../public/img/hamburger-dark.png");
     apps.children[0].setAttribute("src", "../../public/img/9dots-dark.png");
 }
+if(html.classList.contains("spooky-theme")) {
+    logo.children[0].setAttribute("src", "../../public/img/spooky/dark-spooky-logo.png")
+}
+if(html.classList.contains("cute-theme")) {
+    logo.children[0].setAttribute("src", "../../public/img/cute/cute-logo.png")
+}
+if(html.classList.contains("panda-theme")) {
+    logo.children[0].setAttribute("src", "../../public/img/panda/panda-logo.png")
+}
 
 document.addEventListener("click", (event) => {
     console.log(event.target);
