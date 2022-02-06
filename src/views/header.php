@@ -1,7 +1,7 @@
 <?php 
     include('../includes/class-autoloader.inc.php');
 ?> 
-<html lang="en" class="spooky-theme dark">
+<html lang="en" class="">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +9,15 @@
     <link rel="stylesheet" href="../../public/css/style.css">
     <!-- <link rel="icon" href="../../public/img/logoContacts.png"> -->
     <title>Doodle Contacts</title>
+    <script>
+        const html = document.querySelector("html");
+        const theme = localStorage.getItem("theme");
+        if (theme == null) {
+            html.setAttribute("class", "light-theme light");
+        } else {
+            html.setAttribute("class", theme);
+        }
+    </script>
 </head>
 <body>
     <header>

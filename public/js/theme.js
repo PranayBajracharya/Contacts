@@ -2,7 +2,7 @@
 
 console.log("Themememe..");
 
-const html = document.querySelector("html");
+// const html = document.querySelector("html");
 const ham = document.querySelector(".hamburger-menu");
 const apps = document.querySelector(".apps");
 const logo = document.querySelector(".home");
@@ -34,27 +34,32 @@ document.addEventListener("click", (event) => {
     if(event.target.matches(".light-theme")) {
         html.setAttribute("class", "light-theme light");
         lightLogos();
-        logo.children[0].setAttribute("src", "../../public/img/logoContacts.png")
+        logo.children[0].setAttribute("src", "../../public/img/logoContacts.png");
+        localStorage.setItem("theme", "light-theme light");
     }
     else if(event.target.matches(".dark-theme")) {
         html.setAttribute("class", "dark-theme dark");
         darkLogos();
-        logo.children[0].setAttribute("src", "../../public/img/logoContacts.png")
+        logo.children[0].setAttribute("src", "../../public/img/logoContacts.png");
+        localStorage.setItem("theme", "dark-theme dark");
     }
     else if(event.target.matches(".panda-theme")) {
         html.setAttribute("class", "panda-theme light");
         lightLogos();
-        logo.children[0].setAttribute("src", "../../public/img/panda/panda-logo.png")
+        logo.children[0].setAttribute("src", "../../public/img/panda/panda-logo.png");
+        localStorage.setItem("theme", "panda-theme light");
     }
     else if(event.target.matches(".spooky-theme")) {
         html.setAttribute("class", "spooky-theme dark");
         darkLogos();
-        logo.children[0].setAttribute("src", "../../public/img/spooky/dark-spooky-logo.png")
+        logo.children[0].setAttribute("src", "../../public/img/spooky/dark-spooky-logo.png");
+        localStorage.setItem("theme", "spooky-theme dark");
     }
     else if(event.target.matches(".cute-theme")) {
         html.setAttribute("class", "cute-theme light");
         lightLogos();
-        logo.children[0].setAttribute("src", "../../public/img/cute/cute-logo.png")
+        logo.children[0].setAttribute("src", "../../public/img/cute/cute-logo.png");
+        localStorage.setItem("theme", "cute-theme light");
     }
 
 })
