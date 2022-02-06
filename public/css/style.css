@@ -16,7 +16,6 @@
     --create-button-box-shadow: 4px 4px 4px 0px rgb(60 64 67 / 30%),
                                 4px 4px 4px 2px rgb(60 64 67 / 15%);
 }
-
 :root.dark-theme {
     --background: #000;
     --background-dark: rgb(44, 44, 44);
@@ -31,6 +30,51 @@
     --create-hover-color: hsla(212, 100%, 97%, 1);
     --create-button-box-shadow: 4px 4px 4px 2px rgb(160 164 167 / 50%),
                                 4px 4px 4px 2px rgb(160 164 167 / 30%);
+}
+:root.spooky-theme {
+    --background: #000;
+    --background-dark: rgb(44, 44, 44);
+    --hover-background-color: rgb(19, 19, 19);
+    --color: #fff;
+    --home-link: #fff;
+    --active-background-color: #fff;
+    --active-color: #1967d2;
+    --line: #444;
+    --img-filter: invert(99%) sepia(5%) saturate(1%) hue-rotate(11deg) brightness(105%) contrast(100%);
+    --active-img-filter: invert(27%) sepia(81%) saturate(3945%) hue-rotate(209deg) brightness(91%) contrast(81%);
+    --create-hover-color: hsla(212, 100%, 97%, 1);
+    --create-button-box-shadow: 4px 4px 4px 2px rgb(160 164 167 / 50%),
+                                4px 4px 4px 2px rgb(160 164 167 / 30%);
+}
+:root.panda-theme {
+    --background: #fff;
+    --background-dark: rgb(230, 230, 230);
+    --hover-background-color: rgb(240, 240, 240);
+    --color: #222;
+    --home-link: #222;
+    --active-background-color: #e8f0fe;
+    --active-color: #1967d2;
+    --line: #bbb;
+    --img-filter: invert(19%) sepia(5%) saturate(16%) hue-rotate(316deg) brightness(88%) contrast(90%);
+    --active-img-filter: invert(27%) sepia(81%) saturate(3945%) hue-rotate(209deg) brightness(91%) contrast(81%);
+    --create-hover-color: rgba(169, 204, 245, 0.1);
+    --create-button-box-shadow: 4px 4px 4px 0px rgb(60 64 67 / 30%),
+                                4px 4px 4px 2px rgb(60 64 67 / 15%);
+}
+:root.cute-theme {
+    --background: #fff;
+    --background-dark: rgb(230, 230, 230);
+    --hover-background-color: rgb(240, 240, 240);
+    --color: #222;
+    --home-link: #222;
+    --active-background-color: #e8f0fe;
+    --active-color: #1967d2;
+    --line: #bbb;
+    --img-filter: invert(19%) sepia(5%) saturate(16%) hue-rotate(316deg) brightness(88%) contrast(90%);
+    --active-img-filter: invert(27%) sepia(81%) saturate(3945%) hue-rotate(209deg) brightness(91%) contrast(81%);
+    --create-hover-color: rgba(169, 204, 245, 0.1);
+    --create-button-box-shadow: 4px 4px 4px 0px rgb(60 64 67 / 30%),
+                                4px 4px 4px 2px rgb(60 64 67 / 15%);
 }
 
 /* Global */
@@ -89,10 +133,13 @@ header {
     padding: 1px;
 }
 .home span {
-    font-family: 'Delius', cursive;
+    /* font-family: 'Delius', cursive; */
     font-size: 24px;
     margin: 0 4px;
     padding-right: 10px;
+}
+.home span:hover {
+    text-decoration: underline;
 }
 
 /* Search */
@@ -128,6 +175,36 @@ header {
 }
 .search-area:focus {
     outline: none;
+}
+
+/* Theme */
+.theme {
+    position: relative;
+    padding: 10px 15px;
+}
+.theme:hover {
+    background-color: #eee;
+    border-radius: 12px 12px 0 0;
+}
+.theme-list {
+    display: none;
+    position: absolute;
+    top: 45px;
+    left: 0px;
+    width: max-content ;
+    background-color: #eee;
+    border-radius: 0 12px 12px 0;
+}
+.theme-list li {
+    list-style: none;
+    padding: 10px 15px;
+    border-radius: 0 12px 12px 0;
+}
+.theme-list li:hover {
+    background-color: #ddd;
+}
+.theme:hover .theme-list {
+    display: block;
 }
 
 /* Profile */
@@ -254,6 +331,7 @@ aside {
 main {
     margin-left: 280px;
     padding: 20px;
+    z-index: 1;
 }
 
 @media screen and (max-width: 1024px) {

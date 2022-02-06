@@ -1,7 +1,7 @@
 <?php 
     include('../includes/class-autoloader.inc.php');
 ?> 
-<html lang="en" class="light-theme">
+<html lang="en" class="dark-theme dark">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -36,7 +36,14 @@
 
         <div class="profile-side">
             <div class="theme button">
-                Theme
+                <span>Theme</span>
+                <ul class="theme-list">
+                    <li class="light-theme">Light theme</li>
+                    <li class="dark-theme">Dark theme</li>
+                    <li class="panda-theme">Panda theme</li>
+                    <li class="spooky-theme">Spooky theme</li>
+                    <li class="cute-theme">Cute theme</li>
+                </ul>
             </div>
             <div class="apps hover-effect circle">
                 <img src="../../public/img/9dots.png" alt="Google Apps">
