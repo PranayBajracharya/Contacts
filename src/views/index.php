@@ -13,7 +13,6 @@
             </div>
             <div class="tbody">
                 <?php 
-                    // $user_id = 1;
                     $testObject = new IndexController();
                     $results = $testObject->index($user_id);
                     foreach ($results as $data) {

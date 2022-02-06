@@ -10,7 +10,6 @@
             </div>
             <div class="tbody">   
             <?php 
-                $user_id = 1;
                 $testObject = new IndexController();
                 $results = $testObject->deleted($user_id);
                 foreach ($results as $data) {
