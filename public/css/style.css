@@ -191,27 +191,24 @@ header {
 .theme {
     position: relative;
     padding: 10px 15px;
-    z-index: 2;
 }
 .theme:hover {
     background-color: var(--theme-hover);
-    border-radius: 12px 12px 0 0;
+    border-radius: 6px 6px 0 0;
 }
 .theme-list {
     display: none;
     position: absolute;
-    top: 45px;
+    top: 100%;
     left: 0px;
     width: max-content ;
     background-color: var(--theme-hover);
-    border-radius: 0 12px 12px 0;
-    z-index: 2;
+    border-radius: 0 6px 6px 6px;
 }
 .theme-list li {
     list-style: none;
     padding: 10px 15px;
-    border-radius: 0 12px 12px 0;
-    z-index: 2;
+    border-radius: 0 6px 6px 0;
 }
 .theme-list li:hover {
     background-color: var(--theme-list-hover);
