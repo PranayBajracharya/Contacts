@@ -40,9 +40,9 @@
         </div>
 
         <div class="profile-side">
-            <div class="theme button">
+            <div class="theme button pointer">
                 <span>Theme</span>
-                <ul class="theme-list">
+                <ul class="theme-list pointer">
                     <li class="light-theme">Light theme</li>
                     <li class="dark-theme">Dark theme</li>
                     <li class="panda-theme">Panda theme</li>
